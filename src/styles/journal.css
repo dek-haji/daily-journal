@@ -1,0 +1,10 @@
+body {
+    background-color: lightgrey;
+}
+fieldset {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    font-size: 25px;
+}
