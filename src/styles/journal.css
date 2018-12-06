@@ -1,10 +1,22 @@
 body {
-    background-color: lightgrey;
+    background-color: #008080;
 }
 fieldset {
     color: black;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid orange;
     font-size: 25px;
+}
+.head1 {
+    display: flex;
+    text-align: center;
+}
+.entryLog {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    border: 2px solid red;
+    padding: 2%;
+    margin: 2%;
 }
