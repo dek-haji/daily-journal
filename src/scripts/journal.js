@@ -17,11 +17,15 @@ const journalEntries = [
 // })
 
 let article1 = document.querySelector('.entryLog'); 
+ 
+let submitButton = document.querySelector('.submit2');
 
 
 
-
-
+submitButton.addEventListener('click', function (){
+  event.preventDefault()
+    console.log('clicked')
+})
 
 document.querySelector('#ConeptCovered').addEventListener('keyup', function (event) {
     article1.innerHTML = (event.target.value);
