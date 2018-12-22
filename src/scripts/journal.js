@@ -4,63 +4,52 @@ const journalEntries = [
         date: "07/24/2018",
         entry: "We learned about array methods, but only forEach made sense",
         mood: "Ok"
+    },
+
+    {
+        concept: "functions",
+        date: "10/24/2018",
+        entry: "We learned about functions, the logic is not clear for me",
+        mood: "excited"
+    },
+
+
+    {
+        concept: "protypes",
+        date: "11/24/2018",
+        entry: "We learned about protypes and how they function",
+        mood: "happy"
     }
 ]
-// let date = document.querySelector('#JournalDate');
+// console.log(journalEntries1)
+//////////////////////////////////////////////////////////////////////////////////////
+let entryRef = document.querySelector("entryLog");
 
-// let concept = document.querySelector('#ConeptCovered');
+const makeJournalEntryComponent = (journalEntries) => {
+    // Create your own HTML structure for a journal entry
+    return
+    `<div>
+    <h2>${concept}</h2>
+    <h4>${date}</h4>
+    <p>${entry}</p>
+    <button${mood}"></button>
+    </div>`
+}
 
-// document.querySelector('#JournalEntry').addEventListener('keyup', function(event){
-//     date.innerHTML = event.target.value;
-//     concept.innerHTML = event.target.value;
-// console.log(event)
-// })
+makeJournalEntryComponent(journalEntries)
 
-let article1 = document.querySelector('.entryLog'); 
- 
-let submitButton = document.querySelector('.submit2');
-
-
-
-submitButton.addEventListener('click', function (){
-  event.preventDefault()
-    console.log('clicked')
-})
-
-document.querySelector('#ConeptCovered').addEventListener('keyup', function (event) {
-    article1.innerHTML = (event.target.value);
- 
-
-})
-
+const renderJournalEntries = (concept, date, entry, mood) => {
+   journalEntries1 = {};
+    journalEntries1.concept = concept;
+    journalEntries1.date = date;
+    journalEntries1.entry = entry;
+    journalEntries1.mood = mood;
+    return journalEntries1;
+}
 
 
 
 
-// let sumbitButton = document.querySelector('#submit1');
+renderJournalEntries(journalEntries);
 
 
-// sumbitButton.addEventListener('click', function (event) {
-// event.preventDefault()
-//     console.log('you clicked me');
-// })
-
-
-
-
-
-// /*
-//     Purpose: To create, and return, a string template that
-//     represents a single journal entry object as HTML
-
-//     Arguments: journalEntry (object)
-// */
-// const makeJournalEntryComponent = (journalEntry) {
-//     for (var i = 0; i < journalEntries.length; i++) {
-
-//     }
-//     // Create your own HTML structure for a journal entry
-//     return `
-
-//     `
-// }
